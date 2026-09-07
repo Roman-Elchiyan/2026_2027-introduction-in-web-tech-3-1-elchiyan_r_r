@@ -1,3 +1,5 @@
+# Лабораторная работа №1
+
 University: [ITMO University](https://itmo.ru/ru/)  
 Faculty: [FICT](https://fict.itmo.ru)  
 Course: [Введение в веб технологии](https://itmo-ict-faculty.github.io/introduction-in-web-tech/)  
@@ -8,7 +10,6 @@ Lab: Lab1
 Date of create: 04.09.2026  
 Date of finished:  
 
-# Лабораторная работа №1
 ## Основы работы с Docker
 
 ### Цель работы
