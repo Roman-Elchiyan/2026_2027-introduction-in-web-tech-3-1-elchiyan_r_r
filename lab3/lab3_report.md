@@ -115,8 +115,6 @@ docker pull bkimminich/juice-shop
 docker run -d --name juice-shop -p 127.0.0.1:3001:3000 bkimminich/juice-shop
 ```
 
-Здесь `127.0.0.1:3001:3000` означает, что порт `3000` внутри контейнера доступен на порту `3001` только с локального компьютера.
-
 ![OWASP Juice Shop](images/05_juice_shop_local.png)
 
 *Рисунок 5 — OWASP Juice Shop, запущенный локально на порту `3001`.*
