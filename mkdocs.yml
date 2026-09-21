@@ -1,0 +1,22 @@
+﻿site_name: Персональный сайт — Роман Элчиян
+
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Как я дошёл до жизни такой: story.md
+  - Рабочие проекты: projects.md
+  - Факапы, эксперименты и побочные эффекты: experiments.md
+  - Сейчас: now.md
+  - Контакты: contacts.md
+  - Блог / заметки: blog/index.md
+
+extra_css:
+  - assets/stylesheets/site.css
+  - assets/stylesheets/matrix.css
+  - assets/stylesheets/story.css
+
+extra_javascript:
+  - assets/javascripts/matrix.js

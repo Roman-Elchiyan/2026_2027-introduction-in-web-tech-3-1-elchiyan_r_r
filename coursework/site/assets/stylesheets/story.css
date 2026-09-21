@@ -1,0 +1,40 @@
+ 
+.story-matrix {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+Story page */
+.story-image {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.story-image img {
+  display: block;
+  width: min(700px, 85%);
+  max-height: 600px;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.story-video {
+  width: min(800px, 90%);
+  margin: 2rem auto;
+}
+
+.story-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.story-image, .story-video {
+  transition: transform .25s ease;
+}
+
+.story-image:hover, .story-video:hover {
+  transform: translateY(-3px);
+}

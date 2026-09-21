@@ -1,0 +1,250 @@
+body {
+    background: #020702;
+}
+
+.md-header {
+    background: #020702 !important;
+    border-bottom: 1px solid #00ff66;
+}
+
+.md-content {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #eaffea;
+}
+
+.md-typeset {
+    color: #eaffea;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+    color: #00ff66;
+}
+
+.md-typeset h1 {
+    text-align: center;
+    font-size: 42px;
+}
+
+.md-typeset img {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    margin: 35px auto;
+    border-radius: 12px;
+}
+
+.md-typeset video {
+    display: block;
+    max-width: 700px;
+    margin: 35px auto;
+}
+
+/* ===== STORY SIDEBARS FIX ===== */
+
+/* убираем белые карточки Material */
+.md-sidebar {
+    background: transparent;
+}
+
+.md-sidebar__scrollwrap {
+    background: transparent;
+}
+
+.md-nav {
+    background: transparent;
+}
+
+
+/* левое меню */
+.md-sidebar--primary {
+    width: 260px;
+}
+
+.md-sidebar--primary .md-nav {
+    padding: 20px;
+}
+
+
+/* правое содержание */
+.md-sidebar--secondary {
+    width: 260px;
+}
+
+.md-sidebar--secondary .md-nav {
+    padding: 20px;
+}
+
+
+/* заголовки меню */
+.md-nav__title {
+    background: transparent !important;
+    color: #00ff66 !important;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+
+/* ссылки */
+.md-nav__link {
+    color: #00ff66 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.md-nav__link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #00ff66;
+}
+
+
+/* активный пункт */
+.md-nav__link--active {
+    color: #00ff66 !important;
+}
+
+
+/* убрать белый фон карточек */
+.md-sidebar__inner {
+    background: transparent !important;
+}
+
+
+/* чтобы меню было ниже шапки */
+.md-sidebar {
+    top: 150px;
+}
+
+
+/* центральный контент не двигаем */
+.md-content {
+    background: transparent;
+}
+
+
+/* ===== CUSTOM STORY NAVIGATION ===== */
+
+.story-site-menu,
+.story-content-menu {
+    position: fixed;
+    top: 180px;
+    width: 230px;
+    z-index: 20;
+}
+
+
+.story-site-menu {
+    left: 20px;
+}
+
+
+.story-content-menu {
+    right: 20px;
+}
+
+
+.story-menu-title {
+    color: #00ff66;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #00ff66;
+}
+
+
+.story-site-menu a,
+.story-content-menu a {
+    display: block;
+    color: #00ff66;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 14px 0;
+}
+
+
+.story-site-menu a:hover,
+.story-content-menu a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+/* убираем стандартные боковые панели Material только на story */
+
+body:has(.story-site-menu) .md-sidebar--primary {
+    display: none;
+}
+
+body:has(.story-content-menu) .md-sidebar--secondary {
+    display: none;
+}
+
+
+/* возвращаем нормальную ширину центрального блока */
+
+body:has(.story-site-menu) .md-main__inner {
+    max-width: none;
+    margin: 0;
+}
+
+
+/* Убираем стандартные блоки Material на страницах */
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+    background: transparent;
+}
+
+
+/* убираем белые карточки Material */
+.md-sidebar__inner {
+    background: transparent !important;
+}
+
+
+/* скрываем стандартный TOC справа */
+.md-sidebar--secondary {
+    display: none;
+}
+
+
+/* возвращаем нашу правую навигацию */
+.story-content-menu {
+    display: block;
+}
+
+
+/* убираем верхнюю стандартную навигацию внутри страницы */
+.md-content > nav,
+.md-content .toc {
+    display: none;
+}
+
+/* ===== HOME PAGE FIX ===== */
+
+.home-title,
+.hero-title,
+.md-typeset .hero-title {
+
+    max-width: 900px;
+    white-space: nowrap;
+    font-size: 72px;
+    line-height: 1;
+    text-align: left;
+
+}
+
+/* ===== MAIN PAGE TITLE FIX ===== */
+
+.md-typeset h1:first-child {
+
+    max-width: 900px;
+    white-space: nowrap;
+    font-size: 72px;
+    line-height: 1;
+
+}

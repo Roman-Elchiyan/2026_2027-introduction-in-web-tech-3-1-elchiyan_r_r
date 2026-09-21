@@ -1,0 +1,495 @@
+﻿/* =========================
+   GLOBAL
+========================= */
+
+body {
+    background: #020702;
+}
+
+
+.md-header {
+    background: #020702 !important;
+    border-bottom: 1px solid #00ff66;
+}
+
+
+.md-typeset {
+    color: #eaffea;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.md-typeset h1,
+.md-typeset h2 {
+    color: #00ff66;
+}
+
+
+.md-typeset img {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    margin: 35px auto;
+    border-radius: 12px;
+}
+
+
+.md-typeset video {
+    display: block;
+    max-width: 700px;
+    margin: 35px auto;
+}
+
+
+
+/* =========================
+   MATERIAL SIDEBARS
+========================= */
+
+
+.md-sidebar {
+    background: transparent;
+}
+
+
+.md-sidebar__scrollwrap {
+    background: transparent;
+}
+
+
+.md-sidebar__inner {
+    background: transparent !important;
+}
+
+
+.md-nav {
+    background: transparent;
+}
+
+
+.md-nav__title {
+    background: transparent !important;
+    color: #00ff66 !important;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+
+.md-nav__link {
+    color: #00ff66 !important;
+    font-size:16px;
+    font-weight:600;
+}
+
+
+.md-nav__link:hover {
+    color:white !important;
+    text-shadow:0 0 8px #00ff66;
+}
+
+
+/* =========================
+   CUSTOM STORY NAVIGATION
+========================= */
+
+
+.story-site-menu,
+.story-content-menu {
+
+    position: fixed;
+    top:180px;
+    width:230px;
+    z-index:20;
+
+}
+
+
+.story-site-menu {
+    left:20px;
+}
+
+
+.story-content-menu {
+    right:20px;
+}
+
+
+
+.story-menu-title {
+
+    color:#00ff66;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:25px;
+
+    text-shadow:
+    0 0 8px #00ff66;
+
+}
+
+.story-content-menu .story-menu-title {
+
+    margin-bottom:20px;
+
+}
+
+
+.story-site-menu a,
+.story-content-menu a {
+
+    display:block;
+    color:#00ff66;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    margin:14px 0;
+
+}
+
+
+
+.story-site-menu a:hover,
+.story-content-menu a:hover {
+
+    color:white;
+    text-shadow:0 0 10px #00ff66;
+
+}
+
+
+
+/* скрываем стандартные меню только там,
+где есть наше */
+
+body:has(.story-site-menu) .md-sidebar--primary {
+
+    display:none;
+
+}
+
+
+
+body:has(.story-content-menu) .md-sidebar--secondary {
+
+    display:none;
+
+}
+
+
+
+body:has(.story-site-menu) .md-main__inner {
+
+    max-width:none;
+    margin:0;
+
+}
+
+
+
+body:has(.story-site-menu) .md-content {
+
+    max-width:850px;
+    margin:0 auto;
+
+}
+
+
+/* убираем стандартный TOC только внутри наших страниц */
+
+body:has(.story-content-menu) .md-content > nav,
+body:has(.story-content-menu) .md-content .toc {
+
+    display:none;
+
+}
+
+
+
+
+
+/* =========================
+   MATRIX HOME ONLY
+========================= */
+
+
+body:has(.matrix-hero) .md-grid {
+
+    max-width:none;
+
+}
+
+
+
+body:has(.matrix-hero) .md-main__inner {
+
+    max-width:none;
+    margin:0;
+
+}
+
+
+
+body:has(.matrix-hero) .md-content {
+
+    max-width:none;
+    margin:0;
+
+}
+
+
+
+body:has(.matrix-hero) .md-content__inner {
+
+    max-width:none;
+    margin:0;
+    padding:0;
+
+}
+
+
+
+body:has(.matrix-hero) .md-header {
+
+    display:none;
+
+}
+
+
+
+.matrix-hero {
+
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    background:#010805;
+
+}
+
+
+
+.matrix-overlay {
+
+    position:relative;
+    z-index:3;
+    width:min(1180px, calc(100% - 4rem));
+    margin:0 auto;
+    padding:9vh 0 4rem;
+    color:#effff4;
+
+}
+
+
+
+.matrix-eyebrow {
+
+    margin:0 0 .9rem;
+    color:#79ffab;
+    font-size:.95rem;
+    font-weight:600;
+    letter-spacing:.14em;
+
+}
+
+
+
+.md-typeset .matrix-title {
+
+    display:inline-block;
+    margin:0 0 1.5rem;
+    padding:.25rem .7rem;
+
+    color:#f5fff8 !important;
+
+    background:rgba(0,10,5,.58);
+
+    border:1px solid rgba(100,255,155,.27);
+
+    border-radius:.45rem;
+
+    font-size:clamp(2.7rem,6vw,5rem);
+
+    font-weight:700;
+
+    line-height:1.05;
+
+    text-shadow:
+    0 0 8px rgba(190,255,215,.95),
+    0 0 28px rgba(40,255,120,.45);
+
+}
+
+
+
+.matrix-lead {
+
+    max-width:820px;
+
+    margin:0 0 2.1rem;
+
+    color:#e2ffeb;
+
+    font-size:1.2rem;
+
+    line-height:1.65;
+
+    text-shadow:0 2px 8px #000;
+
+}
+
+
+
+.home-links {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(260px,1fr));
+
+    gap:1rem;
+
+    max-width:1050px;
+
+}
+
+
+
+.home-link-card {
+
+    display:block;
+
+    padding:1.15rem 1.25rem;
+
+    color:#effff4 !important;
+
+    text-decoration:none !important;
+
+    background:rgba(0,15,7,.68);
+
+    border:1px solid rgba(90,255,145,.24);
+
+    border-radius:.8rem;
+
+    backdrop-filter:blur(5px);
+
+    transition:.18s ease;
+
+}
+
+
+
+.home-link-card:hover {
+
+    transform:translateY(-3px);
+
+    background:rgba(0,30,13,.83);
+
+    border-color:rgba(110,255,160,.58);
+
+}
+
+
+
+.home-link-title {
+
+    display:block;
+    margin-bottom:.3rem;
+    color:white;
+    font-weight:700;
+
+}
+
+
+
+.home-link-text {
+
+    display:block;
+    color:#bff7d0;
+
+}
+
+
+
+/* =========================
+   MATRIX CANVAS
+========================= */
+
+
+#matrix-canvas {
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    pointer-events:none;
+
+}
+
+
+
+.matrix-hero::after {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    background:
+    radial-gradient(
+    circle at 50% 30%,
+    rgba(0,25,10,.08),
+    rgba(0,8,4,.22) 55%,
+    rgba(0,4,2,.4) 100%
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+@media(max-width:800px){
+
+    .matrix-overlay {
+
+        width:calc(100% - 2rem);
+        padding-top:3rem;
+
+    }
+
+
+    .home-links {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* убираем стандартную карточку содержания */
+
+.md-sidebar--secondary .md-sidebar__inner {
+
+    background: transparent !important;
+    box-shadow:none !important;
+
+}
+
+
+.md-sidebar--secondary .md-nav__title {
+
+    background:transparent !important;
+    box-shadow:none !important;
+
+}
+
