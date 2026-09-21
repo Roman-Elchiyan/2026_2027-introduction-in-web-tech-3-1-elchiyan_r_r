@@ -1,4 +1,7 @@
 ﻿site_name: Персональный сайт — Роман Элчиян
+site_description: "Персональный сайт в рамках курса «Введение в веб технологии»"
+site_author: "Эльчиян Роман Романович"
+site_url: "https://roman70452.github.io/2026_2027-introduction-in-web-tech-3-1-elchiyan_r_r/"
 
 theme:
   name: material
