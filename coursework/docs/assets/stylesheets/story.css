@@ -248,3 +248,13 @@ body:has(.story-site-menu) .md-main__inner {
     line-height: 1;
 
 }
+
+
+/* ===== STORY TEXT COLOR FIX ===== */
+
+body:has(.story-site-menu) .md-typeset p,
+body:has(.story-site-menu) .md-typeset li,
+body:has(.story-site-menu) .md-typeset strong,
+body:has(.story-site-menu) .md-typeset em {
+    color: #eaffea !important;
+}
