@@ -1,8 +1,19 @@
-﻿site_name: Персональный сайт — Роман Элчиян
+site_name: Персональный сайт — Роман Элчиян
+site_url: https://roman-elchiyan.github.io/2026_2027-introduction-in-web-tech-3-1-elchiyan_r_r/
+
+exclude_docs: |
+  /blog.md
+  /story_backup_before_text.md
 
 theme:
   name: material
   language: ru
+
+markdown_extensions:
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 nav:
   - Главная: index.md

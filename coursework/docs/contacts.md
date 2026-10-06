@@ -4,11 +4,11 @@
 ПЕРСОНАЛЬНЫЙ САЙТ
 </div>
 
-<a href="/">Главная</a>
-<a href="/story/">Обо мне</a>
-<a href="/projects/">Рабочие проекты</a>
-<a href="/contacts/">Контакты</a>
-<a href="/blog/">Блог / заметки</a>
+<a href="../">Главная</a>
+<a href="../story/">Обо мне</a>
+<a href="../projects/">Рабочие проекты</a>
+<a href="../contacts/">Контакты</a>
+<a href="../blog/">Блог / заметки</a>
 
 </div>
 
@@ -19,7 +19,7 @@
 КОНТАКТЫ
 </div>
 
-<a href="#contacts">
+<a href="#связаться">
 Связаться
 </a>
 
@@ -37,7 +37,7 @@ GitHub
 
 Telegram:
 
-[@rel70452](internal:username_regular/rel70452@715874419)
+[@rel70452](https://t.me/rel70452)
 
 Email:
 

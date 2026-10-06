@@ -4,21 +4,21 @@
 ПЕРСОНАЛЬНЫЙ САЙТ
 </div>
 
-<a href="/">
+<a href="../">
 Главная
 </a>
 
-<a href="/story/">
+<a href="../story/">
 Обо мне
 </a>
 
-<a href="/projects/">Рабочие проекты</a>
+<a href="../projects/">Рабочие проекты</a>
 
-<a href="/contacts/">
+<a href="../contacts/">
 Контакты
 </a>
 
-<a href="/blog/">
+<a href="../blog/">
 Блог / заметки
 </a>
 
@@ -31,15 +31,15 @@
 ПРОЕКТЫ
 </div>
 
-<a href="#production">
+<a href="#производство">
 Производство
 </a>
 
-<a href="#construction">
+<a href="#строительство">
 Строительство
 </a>
 
-<a href="#it">
+<a href="#it-проекты">
 IT проекты
 </a>
 

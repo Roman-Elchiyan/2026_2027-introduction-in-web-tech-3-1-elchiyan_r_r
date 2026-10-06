@@ -8,25 +8,25 @@ hide:
 ПЕРСОНАЛЬНЫЙ САЙТ
 </div>
 
-<a href="/">
+<a href="../">
 Главная
 </a>
 
-<a href="/story/">
+<a href="../story/">
 Обо мне
 </a>
 
-<a href="/projects/">
+<a href="../projects/">
 Рабочие проекты
 </a>
 
 
 
-<a href="/contacts/">
+<a href="../contacts/">
 Контакты
 </a>
 
-<a href="/blog/">
+<a href="../blog/">
 Блог / заметки
 </a>
 
@@ -39,7 +39,7 @@ hide:
 СОДЕРЖАНИЕ
 </div>
 
-<a href="#как-всё-началось">
+<a href="#пролог">
 01. Пролог
 </a>
 
@@ -51,7 +51,7 @@ hide:
 03. Первый опыт
 </a>
 
-<a href="#от-закупок-к-производству-и-стройке">
+<a href="#от-закупок-к-производству">
 04. Производство
 </a>
 
@@ -59,7 +59,7 @@ hide:
 05. Новый завод
 </a>
 
-<a href="#новый-этап">
+<a href="#итмо-и-третий-завод">
 06. ИТМО и 3 завод
 </a>
 
@@ -198,7 +198,7 @@ hide:
 ## Послание от шефа
 
 <video controls width="700">
-<source src="assets/videos/about/10.mp4" type="video/mp4">
+<source src="../assets/videos/about/10.mp4" type="video/mp4">
 </video>
 
 Перевод с управленческого:
